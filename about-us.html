@@ -1,0 +1,135 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="about-us.css">
+    <script src="https://kit.fontawesome.com/YOUR-FONT-AWESOME-KIT.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header-container">
+        <header class="header">
+            <div class="header-top">
+                <div class="contact-info">
+                    <span class="email">
+                        <i class="fa fa-envelope" style="color: #ff6600;"></i>
+                        hrdept@rcramosconstructioncorporation.com
+                    </span>
+                    <span class="address">
+                        <i class="fa fa-map-marker-alt" style="color: #ff6600;"></i>
+                        104 Quezon Road Brgy. San Roque Mexico, Pampanga, Mexico, Philippines
+                    </span>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com" target="_blank" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.youtube.com" target="_blank" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.tiktok.com" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <hr>
+            <div class="header-bottom">
+                <div class="logo">
+                    <img src="images/logo.png" alt="R.C Ramos Logo">
+                </div>
+                <nav class="nav">
+                    <a href="#" class="active" style="color: #ff6600;">Home</a>
+                    <a href="#">Services</a>
+                    <a href="index.html">
+                        <img src="images/3.png" alt="Corporation name">
+                    </a>
+                    <a href="#">Projects</a>
+                    <a href="#">About us</a>
+                </nav>
+                <div class="contact-button">
+                    <a href="contact.html">
+                        <i class="fa fa-envelope">
+                        Contact Us
+                        </i>
+                    </a>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <section class="hero-section">
+        <div class="overlay">
+            <div class="breadcrumb">HOME / CONTACT US</div>
+            <h1>CONCTACT US</h1>
+        </div>
+    </section>
+
+        <div class="container-1stSection">
+            <div class="line"></div>
+            <div class="about-container" onclick="toggleAbout()">
+                <h2>About R.C. Ramos Construction Corporation</h2>
+                <p class="intro">Established in 1995, R.C. Ramos Construction Corporation (RCRCC) is a highly regarded Triple "A" Construction Firm, specializing <br> in general construction and design-build services. Over the years, we have built a reputation as a responsive, cost-effective, and <br> innovative leader in the Building and Construction Industry.
+                </p>
+                <div class="about-content">
+                    <p>Our success is driven by a team of skilled architects, engineers, and planners, making RCRCC a sought-after firm in the Design and <br> Construction sector. We are committed to excellence, efficiency, and timely project delivery, ensuring that every construction <br> endeavor meets the highest standards.</p>
+                    <p>With the combined expertise of our design engineers, architects, and field engineers, RCRCC has consistently delivered high- <br> quality projects across hospitals, industrial facilities, malls, schools, residential developments, and commercial establishments. <br> Our dedication to nation-building and client satisfaction remains at the core of everything we do.</p>
+                    <p>Today, RCRCC continues to expand its legacy, partnering with property developers, businesses, and fellow constructors to shape <br> the future of Philippine infrastructure. We are your trusted partner in building and developing your vision into reality.</p>
+                </div>
+                <div class="arrow">▼</div>
+            </div>
+            <div class="line"></div>
+        </div>
+
+    <div class="social-section">
+        <h2>Stay Connected with Us</h2>
+        <p>Follow us on social media to stay updated on our latest projects and news. 
+            Join our community and be part of our journey in construction excellence!</p>
+        <div class="social-buttons">
+            <button class="social-btn">Follow</button>
+            <button class="social-btn">Share</button>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="images/logo3.png" alt="R.C. Ramos Logo">
+        </div>
+    
+        <nav class="footer-nav">
+            <a href="#">About Us</a>
+            <a href="#">Our Services</a>
+            <a href="#">Project Gallery</a>
+            <a href="#">Get a Quote</a>
+            <a href="#">Contact Us</a>
+        </nav>
+    
+        <hr class="footer-divider">
+    
+        <div class="footer-bottom">
+            <p>© 2024 R.C. Ramos Construction. All rights reserved.</p>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+                <a href="#">Cookies Settings</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function toggleAbout() {
+            const container = document.querySelector('.about-container');
+            const content = document.querySelector('.about-content');
+            const arrow = document.querySelector('.arrow');
+            
+            if (content.style.display === "none" || content.style.display === "") {
+                content.style.display = "block";
+                container.style.maxHeight = "1000px";
+                arrow.innerHTML = "▲";
+            } else {
+                content.style.display = "none";
+                container.style.maxHeight = "200px";
+                arrow.innerHTML = "▼";
+            }
+        }
+    </script>
+</body>
+</html>

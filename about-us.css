@@ -1,0 +1,315 @@
+  /* General Styles */
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header */
+
+.header-container {
+    margin: 0 auto;
+    max-width: 1270px;
+    padding: 0 20px;
+}
+
+.header {
+    width: 100%;
+    background-color: #fff;
+}
+
+.header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    font-size: 14px;
+}
+
+.contact-info {
+    display: flex;
+    gap: 20px;
+}
+
+.contact-info span {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.social-icons a {
+    margin-right: 10px;
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+
+.social-icons a:hover {
+    color: #ff6600;
+}
+
+.header-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo img {
+    width: 80px;
+    height: auto;
+}
+
+.corporation-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    flex-grow: 1;
+}
+
+.nav {
+    display: flex;
+    gap: 30px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 0.3s;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+.nav a:hover {
+    color: #ff6600;
+}
+
+.contact-button a {
+    padding: 10px 20px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    text-decoration: none;
+}
+
+.contact-button a:hover {
+    background-color: #ff6600;
+}
+
+hr {
+width:97%;
+margin:0 auto;
+color:#000000;
+background-color:#070505;
+height: 1px;
+}
+
+/* 1st section  */
+
+/* Section Styling */
+.hero-section {
+    background: url('images/projectsdome.JPG') no-repeat center center/cover;
+    height: 350px; /* Adjust height as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+
+/* Overlay for better contrast */
+.overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/* Breadcrumb (Subtitle) */
+.breadcrumb {
+    background: white;
+    color: black;
+    font-size: 14px;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Title */
+.hero-section h1 {
+    font-size: 28px;
+    color: black;
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+}
+
+/* end of 1st section  */
+
+/* **************************************************SOCIAL SECTION*********************************************************************** */
+.social-section {
+    background: #eaeaea;
+    padding: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+.social-section h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.social-section p {
+    font-size: 16px;
+    color: #333;
+    max-width: 600px;
+    margin: auto;
+}
+.social-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.social-btn {
+    padding: 10px 20px;
+    border: 2px solid black;
+    background: white;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.social-btn:hover {
+    background: black;
+    color: white;
+}
+/* **************************************************SOCIAL SECTION END*********************************************************************** */
+
+/* **************************************************FIRST SECTION*********************************************************************** */
+.container-1stSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding-top: 40px;
+}
+.line {
+    width: 90%;
+    max-width: 1140px;
+    height: 2px;
+    background-color: black;
+    margin: 10px 0;
+}
+.about-container {
+    width: 80%;
+    max-width: 1140px;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: max-height 0.5s ease-in-out;
+    max-height: 200px;
+    cursor: pointer;
+    text-align: center;
+    position: relative;
+}
+.about-content {
+    display: none;
+    margin-top: 10px;
+}
+.arrow {
+    margin-top: 10px;
+    font-size: 20px;
+}
+.intro {
+    margin-top: 10px;
+}
+/* **************************************************FIRST SECTION END*********************************************************************** */
+
+/* footer  */
+/* Footer Styling */
+.footer {
+    background-color: #fff; /* White background */
+    text-align: center;
+    padding: 20px 0;
+    font-family: "Playfair Display", serif;
+}
+
+/* Logo */
+.footer-logo img {
+    width: 600px;  /* Set a larger fixed width */
+    height: 120px;  /* Set a fixed height */
+    object-fit: contain; /* Ensures it doesn’t stretch */
+    padding: 1%;
+}
+
+
+
+/* Navigation Links */
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #ff6600; /* Orange hover effect */
+}
+
+/* Divider Line */
+.footer-divider {
+    width: 95%;
+    margin: 20px auto;
+    border: 0;
+    height: 1px;
+    background-color: black;
+}
+
+/* Footer Bottom Section */
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    font-size: 14px;
+}
+
+/* Copyright Text */
+.footer-bottom p {
+    margin: 0;
+}
+
+/* Legal Links */
+.footer-links {
+    display: flex;
+    gap: 20px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #ff6600;
+}
+
+/* footer end  */
+
