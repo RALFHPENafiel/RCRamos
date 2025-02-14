@@ -97,6 +97,7 @@
     cursor: pointer;
     transition: background-color 0.3s;
     text-decoration: none;
+    font-size: medium;
 }
 
 .contact-button a:hover {
@@ -202,8 +203,8 @@ height: 1px;
     padding-top: 40px;
 }
 .line {
-    width: 90%;
-    max-width: 1140px;
+    width: 100%;
+    max-width: 1200px;
     height: 2px;
     background-color: black;
     margin: 10px 0;
@@ -284,6 +285,159 @@ height: 1px;
 }
 
 /* **************************************************2nd SECTION END*********************************************************************** */
+
+/* **************************************************3rd SECTION*********************************************************************** */
+.container3rd{
+    text-align: center;
+}
+.container3rd h2{
+    margin: 60px;
+}
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.card {
+    background: white;
+    border-radius: 12px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+}
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+.icon-container {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: orange;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.text {
+    margin-top: 40px;
+}
+.hidden-content {
+    display: none;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+/* **************************************************3rd SECTION END*********************************************************************** */
+/* **************************************************4TH SECTION*********************************************************************** */
+
+.container4TH {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10vh;
+}
+.flip-card {
+    background-color: transparent;
+    width: 1150px;
+    height: 300px;
+    perspective: 1000px;
+    position: relative;
+}
+.flip-card-inner {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 0.6s ease-in-out;
+}
+.flip-card.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backface-visibility: hidden;
+    padding: 20px;
+}
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+h2 {
+    color: black;
+    margin-bottom: 20px;
+}
+h3 {
+    color: #ff6600;
+    margin-bottom: 10px;
+}
+.flip-card-back p {
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 80%;
+}
+
+/* **************************************************4TH SECTION END*********************************************************************** */
+
+/* **************************************************5TH SECTION*********************************************************************** */
+.container5th{
+    display: flex;
+    justify-content: center;
+}
+.faq-container {
+    max-width: 1200px;
+    padding: 40px;
+    background: white;
+}
+.faq-container h1 {
+    font-size: 2rem;
+}
+.faq-container p {
+    color: #666;
+}
+.faq-item {
+    padding: 20px 0;
+    border-bottom: 2px solid black;
+}
+.faq-item:last-child {
+    border-bottom: none;
+}
+.faq-question {
+    font-weight: bold;
+}
+.faq-contact {
+    text-align: center;
+    margin-top: 40px;
+}
+.faq-contact button {
+    padding: 10px 20px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* **************************************************5TH SECTION END*********************************************************************** */
 
 /* footer  */
 /* Footer Styling */
